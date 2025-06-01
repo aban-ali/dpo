@@ -1,0 +1,144 @@
+In Fig. 8–5 a square-threaded power screw with single thread having a mean
+diameter $d_m$ , a pitch p, a lead angle λ, and a helix angle ψ is loaded by the axial
+compressive force F. We wish to find an expression for the torque required to raise
+this load, and another expression for the torque required to lower the load.
+First, imagine that a single thread of the screw is unrolled or developed (Fig. 8–6)
+for exactly a single turn. Then one edge of the thread will form the hypotenuse of a right
+triangle whose base is the circumference of the mean-thread-diameter circle and whose
+height is the lead. The angle λ, in Figs. 8–5 and 8–6, is the lead angle of the thread. We
+represent the summation of all the axial forces acting upon the normal thread area by F.
+To raise the load, a force $P_R$ acts to the right (Fig. 8–6a), and to lower the load, $P_L$ acts
+to the left (Fig. 8–6b). The friction force is the product of the coefficient of friction f
+with the normal force N, and acts to oppose the motion. The system is in equilibrium
+under the action of these forces, and hence, for raising the load, we have
+$F_x = P_R − N*sin(λ) − f*N*cos(λ)= 0$ - (a)
+$F_y = −F − f*N*sin(λ) + N*cos(λ)=0$ - (a)
+In a similar manner, for lowering the load, we have
+$F_x = −P_L − N*sin(λ) + f*N*cos(λ)=0$ -(b)
+$F_y = −F + f*N*sin(λ) + N*cos(λ)=0$ -(b)
+
+Since we are not interested in the normal force N, we eliminate it from each of these
+sets of equations and solve the result for P. For raising the load, this gives
+$P_R =F*\frac{(sin(λ) + f*cos(λ))}{cos(λ) − f*sin(λ)}$ - (c)
+and for lowering the load,
+$P_L =F*\frac{( f*cos(λ) − sin(λ))}{cos(λ) + f*sin(λ)}$ - (d)
+
+Next, divide the numerator and the denominator of these equations by cos λ and use
+the relation $tan(λ) = l/π*d_m$ (Fig. 8–6). We then have, respectively,
+$P_R =F*{[(l/π*d_m ) + f]}{1 − ( f*l/π*d_m )}$ - (e)
+$P_L =F*{[f−(l/π*d_m)]}{1+(f*l/π*d_m)}$ - (f)
+
+Finally, noting that the torque is the product of the force P and the mean radius $d_m /2$,
+for raising the load we can write
+$T_R =F*d_m*\frac{(l + π*f*d_m)}{2*(π*d_m − f*l)}$ - (8–1)
+where $T_R$ is the torque required for two purposes: to overcome thread friction and to
+raise the load.
+The torque required to lower the load, from Eq. ( f ), is found to be
+$TL =F*d_m*{π*f*d_m − l}{2*(π*d_m + f*l)}$ - (8–2)
+This is the torque required to overcome a part of the friction in lowering the load.
+So the torque require to raise the load is 
+$T_R=\frac{F*d_m}{2}*\frac{l+\pi*f*d_m}{\pi*d_m-f*l}+\frac{F*f_c*d_c}{2}$
+and torque require to lower the load is
+$T_L=\frac{F*d_m}{2}*\frac{\pi*f*d_m-l}{\pi*d_m+f*l}+\frac{F*f_c*d_c}{2}$  
+
+It may turn out, in specific instances where the lead is large or the friction is low, that the load
+will lower itself by causing the screw to spin without any external effort. In such cases,
+the torque $T_L$ from Eq. (8–2) will be negative or zero. When a positive torque is
+obtained from this equation, the screw is said to be self-locking. Thus the condition
+for self-locking is
+$π *f* d_m > l$
+Now divide both sides of this inequality by $π*d_m$ . Recognizing that $l/(π*d_m)$ = tan λ, we
+get $f > tan(λ)$ - (8–3)
+
+This relation states that self-locking is obtained whenever the coefficient of thread
+friction is equal to or greater than the tangent of the thread lead angle.
+An expression for efficiency is also useful in the evaluation of power screws. If
+we let f = 0 in Eq. (8–1), we obtain
+$T_0 =\frac{Fl}{2π}$ - (g)
+which, since thread friction has been eliminated, is the torque required only to raise the load. 
+The efficiency is therefore
+$e=\frac{T_0}{T_R}=\frac{F*l}{2*π*T_R}$ - (8–4)
+
+The preceding equations have been developed for square threads where the nor-
+mal thread loads are parallel to the axis of the screw. In the case of Acme or other
+threads, the normal thread load is inclined to the axis because of the thread angle 2α
+and the lead angle λ. Since lead angles are small, this inclination can be neglected
+and only the effect of the thread angle (Fig. 8–7a) considered. The effect of the angle
+α is to increase the frictional force by the wedging action of the threads. Therefore
+the frictional terms in Eq. (8–1) must be divided by cos α. For raising the load, or for
+tightening a screw or bolt, this yields
+$TR =Fd_m{l + π*f*d_m*sec(α))}{2*(πd_m − f*l*sec(α))}$ - (8–5)
+In using Eq. (8–5), remember that it is an approximation because the effect of the
+lead angle has been neglected.
+
+For power screws, the Acme thread is not as efficient as the square thread, because
+of the additional friction due to the wedging action, but it is often preferred because
+it is easier to machine and permits the use of a split nut, which can be adjusted to
+take up for wear.
+
+Usually a third component of torque must be applied in power-screw applications.
+When the screw is loaded axially, a thrust or collar bearing must be employed between
+the rotating and stationary members in order to carry the axial component. Figure 8–7b
+shows a typical thrust collar in which the load is assumed to be concentrated at the
+mean collar diameter dc . If {f_c} is the coefficient of collar friction, the torque required is
+$T_c =\frac{F f_c d_c}{2}$ - (8–6)
+For large collars, the torque should probably be computed in a manner similar to that
+employed for disk clutches.
+
+Nominal body stresses in power screws can be related to thread parameters as follows. 
+The maximum nominal shear stress t in torsion of the screw body can be expressed as
+$\tau=\frac{16*T}{\pi*d_r^3}$
+The axial stress s in the body of the screw due to load F is
+$\sigma=\frac{F}{A}=\frac{4*F}{\pi*d_r^2}$ - (8–8)
+in the absence of column action. For a short column the J. B. Johnson buckling for
+mula is given by Eq. (4–43), which is
+$(\frac{F}{A})_{crit}=S_y-\frac{S_y*l}{2*\pi*k}(\frac{1}{C*E})$ - (8–9)
+
+ Nominal thread stresses in power screws can be related to thread parameters as 
+follows. The bearing stress in Fig. 8–8, $\sigma_B$, is
+ $\sigma_B=-\frac{F}{\pi*d_m*n_t*p/2}$ - (8–10)
+ where $n_t$ is the number of engaged threads. The bending stress at the root of the thread 
+$\sigma_b$ is found from
+$Z=\frac{I}{c}=\frac{(\pi*d_r*n_t)(p/2)^2}{6}=\frac{\pi}{24}*d_r*n_t*p^2$
+$M=\frac{F*p}{4}$, so
+$\sigma_b=\frac{M}{Z}=\frac{6*F}{\pi*d_r*n_t*p}$ - (8–11)
+
+The transverse shear stress $\tau$ at the center of the root of the thread due to load F is
+$\tau=\frac{3V}{2A}=\frac{3*F}{\pi*d_r*n_t*p}$ - (8–12)
+and at the top of the root it is zero. The von Mises stress $\sigma^{'}$ at the top of the root 
+“plane” is found by first identifying the orthogonal normal stresses and the shear
+stresses. From the coordinate system of Fig. 8–8, we note
+$\sigma_x=\frac{6*F}{\pi*d_r*n_t*p}$ and $\tau_{xy}=0$
+$\sigma_y=-\frac{4*F}{\pi*d_r^2}$ and $\tau_{xy}=\frac{16T}{\pi*d_r^3}$
+$\sigma_z=0$ and $\tau_{xy}=0$
+ then use Eq. (5–14) of Sec. 5–5. Using xyz components of three-dimensional stress, the von Mises stress can be written as
+$\sigma^'=\frac{1}{\sqrt{2}}*[(\sigma_x-\sigma_y)^2+(\sigma_y-\sigma_z)^2+(\sigma_z-\sigma_x)^2+6*(\tau_{xy}^2+\tau_{yz}^2+\tau_{zx}^2)]^{1/2}$ - (5-14)
+ and for plane stress,
+$\sigma^{'}=(\sigma_x^2+\sigma_x*\sigma_y+\sigma_y^2+3*\tau_{xy}^2)^{1/2}$
+	
+The screw-thread form is complicated from an analysis viewpoint. Remember 
+the origin of the tensile-stress area At, which comes from experiment. A power screw 
+lifting a load is in compression and its thread pitch is shortened by elastic defor
+mation. Its engaging nut is in tension and its thread pitch is lengthened. The engaged 
+threads cannot share the load equally. Some experiments show that the first engaged 
+thread carries 0.38 of the load, the second 0.25, the third 0.18, and the seventh is 
+free of load. In estimating thread stresses by the equations above, substituting 0.38F 
+for F and setting $n_t$ to 1 will give the largest level of stresses in the thread-nut 
+combination.
+
+For a square threaded screw, thread depth and thread with are equal and is equal to half the pitch.
+pitch diameter is the difference of major diameter and half of pitch.
+minor diameter is the difference of major diameter and pitch.
+lead (l) is the product of number of threads and pitch.
+
+total efficiency to raise the load is  $e=\frac{F*l}{2*\pi*T_R}$, 
+The bearing stress $\sigma_B$ is, with one thread carrying 0.38F is $\sigma_B=-\frac{2*0.38*F}{\pi*d_r*p}$,
+body stress due to torsinal moment or lifting load torque is $\tau=\frac{16*T_R}{\pi*d_r^3}$,
+body stress due to compressive moment or axial nominal normal stress is $\sigma=-\frac{4*F}{\pi*d_r^2}$,
+The thread-root bending stress $\sigma_b$ with one thread carrying 0.38F is $\sigma_b=\frac{6*0.38*F}{\pi*d_r*p}$,
+where F is the load, l is the lead, $T_R$ is the torque require to raise the load, $d_r$ is the minor diameter.
+ the three principal shear stresses $\tau_{1/2}$, $\tau_{2/3}$, $\tau_{1/3}$
+Each of these occurs on the two planes. The principal shear stresses are given by the equations
+ $\tau_{1/2}=\frac{\sigma_1-\sigma_2}{2}$ and $\tau_{2/3}=\frac{\sigma_2-\sigma_3}{2}$ and $\tau_{1/3}=\frac{\sigma_1-\sigma_3}{2}$ - (3–16)
+ Of course, $\tau_{max}=\tau_{1/3}$ when the normal principal stresses are ordered (\sigma_1>\sigma_2>\sigma_3), 
+so always order your principal stresses.
