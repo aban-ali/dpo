@@ -1,0 +1,72 @@
+Chunk 1: Square Thread Geometry Definitions
+
+{
+  "type": "definition",
+  "topic": "Square Thread Geometry",
+  "content": "For a square thread: Thread Depth (h) = Pitch (p) / 2. Thread Width (w) = Pitch (p) / 2. Pitch Diameter (d_m) = Major Diameter (D) - Pitch (p) / 2. Minor Diameter (d_r) = Major Diameter (D) - Pitch (p). Lead (L) = Number of Threads (n) * Pitch (p).",
+  "keywords": ["square thread", "geometry", "thread depth", "thread width", "pitch diameter", "minor diameter", "lead", "pitch", "major diameter", "number of threads"]
+}
+Chunk 2: Torque to Raise Load
+
+{
+  "type": "formula",
+  "topic": "Torque to Raise Load (Square Thread)",
+  "content": "Torque to raise the load (T_up) in a square thread power screw is given by: T_up = (F * d_m / 2) * tan(alpha + phi) + F * f_c * d_c / 2. Where F is the axial load, d_m is the pitch diameter, alpha is the lead angle (tan(alpha) = Lead / (pi * d_m)), phi is the friction angle (tan(phi) = f), f_c is the collar friction coefficient, and d_c is the collar diameter.",
+  "keywords": ["torque", "raise load", "square thread", "power screw", "axial load", "pitch diameter", "lead angle", "friction angle", "collar friction", "collar diameter", "T_up", "F", "d_m", "alpha", "phi", "f_c", "d_c"]
+}
+Chunk 3: Torque to Lower Load
+
+{
+  "type": "formula",
+  "topic": "Torque to Lower Load (Square Thread)",
+  "content": "Torque to lower the load (T_down) in a square thread power screw is given by: T_down = (F * d_m / 2) * tan(phi - alpha) + F * f_c * d_c / 2. Where F is the axial load, d_m is the pitch diameter, alpha is the lead angle (tan(alpha) = Lead / (pi * d_m)), phi is the friction angle (tan(phi) = f), f_c is the collar friction coefficient, and d_c is the collar diameter.",
+  "keywords": ["torque", "lower load", "square thread", "power screw", "axial load", "pitch diameter", "lead angle", "friction angle", "collar friction", "collar diameter", "T_down", "F", "d_m", "alpha", "phi", "f_c", "d_c"]
+}
+Chunk 4: Efficiency of Square Thread
+
+{
+  "type": "formula",
+  "topic": "Efficiency of Square Thread",
+  "content": "The efficiency (e) of a square thread power screw during lifting is given by: e = (F * Lead) / (2 * pi * T_up) * 100%. Where F is the axial load, Lead is the lead of the screw, and T_up is the torque required to raise the load.",
+  "keywords": ["efficiency", "square thread", "power screw", "axial load", "lead", "torque", "lifting", "e", "F", "Lead", "T_up"]
+}
+Chunk 5: Body Stresses - Torsional and Compressive
+
+{
+  "type": "formula",
+  "topic": "Body Stresses - Torsional and Compressive",
+  "content": "Torsional stress (tau) in the screw body is: tau = T / (J), where T is the torque applied to the screw (either T_up or T_down, depending on the context) and J is the polar moment of inertia of the screw's minor diameter (J = pi * d_r^4 / 32). Compressive stress (sigma_c) in the screw body is: sigma_c = F / A, where F is the axial load and A is the cross-sectional area of the screw's minor diameter (A = pi * d_r^2 / 4). Note that both are at the screw body or minor diameter.",
+  "keywords": ["torsional stress", "compressive stress", "screw body", "torque", "polar moment of inertia", "axial load", "cross-sectional area", "tau", "sigma_c", "T", "J", "d_r", "F", "A"]
+}
+Chunk 6: Bearing Stress
+
+{
+  "type": "formula",
+  "topic": "Bearing Stress",
+  "content": "Bearing stress (sigma_b) for one thread is: sigma_b = F / (A_bearing), where F is the axial load and A_bearing is the bearing area, calculated as A_bearing = pi * d_m * h_engaged, where d_m is the pitch diameter and h_engaged is the engaged height of the threads, which can be assumed to be p/2. Check number of threads to take into account.",
+  "keywords": ["bearing stress", "axial load", "bearing area", "pitch diameter", "thread height", "sigma_b", "F", "A_bearing", "d_m", "h_engaged","number of threads"]
+}
+Chunk 7: Thread Bending Stress
+
+{
+  "type": "formula",
+  "topic": "Thread Bending Stress",
+  "content": "Thread bending stress (sigma_bending) at the root of the thread is estimated as: sigma_bending = (6 * F * d_m) / (pi * number of threads * d_r^3).",
+  "keywords": ["thread bending stress", "axial load", "root of thread", "sigma_bending", "F", "d_m", "d_r", "number of threads"]
+}
+Chunk 8: Von Mises Stress
+
+{
+    "type": "formula",
+    "topic": "Von Mises Stress",
+    "content": "The von Mises stress (sigma_v) combines bending and torsional stresses and is calculated as: sigma_v = sqrt(sigma_bending^2 + 3*tau^2), where sigma_bending is the bending stress and tau is the torsional stress.  This represents the equivalent stress.",
+    "keywords": ["von Mises stress", "bending stress", "torsional stress", "equivalent stress", "sigma_v", "sigma_bending", "tau"]
+}
+Chunk 9: Maximum Shear Stress
+
+{
+    "type": "formula",
+    "topic": "Maximum Shear Stress",
+    "content": "The maximum shear stress (tau_max) is calculated as: tau_max = sqrt((sigma_bending/2)^2 + tau^2), where sigma_bending is the bending stress and tau is the torsional stress.",
+    "keywords": ["maximum shear stress", "bending stress", "torsional stress", "tau_max", "sigma_bending", "tau"]
+}
