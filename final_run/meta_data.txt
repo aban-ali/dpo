@@ -1,0 +1,47 @@
+Square Thread Geometry Definitions
+  For a square thread: 
+    Thread Depth (h) = Pitch (p) / 2. 
+    Thread Width (w) = Pitch (p) / 2. 
+    Pitch Diameter (d_m) = Major Diameter (D) - Pitch (p) / 2. 
+    Minor Diameter (d_r) = Major Diameter (D) - Pitch (p). 
+    Lead (L) = Number of Threads (n) * Pitch (p).
+
+Torque to Raise Load
+  Torque to raise the load (T_up) in a square thread power screw is given by: T_up = (F * d_m / 2) * tan(alpha + phi) + F * f_c * d_c / 2. 
+  Where F is the axial load, d_m is the pitch diameter, alpha is the lead angle (tan(alpha) = Lead / (pi * d_m)), 
+    phi is the friction angle (tan(phi) = f), f_c is the collar friction coefficient, and d_c is the collar diameter.
+  So T_up = (F * d_m / 2) * (lead + f * d_m * pi)/(( pi * d_m) - f * lead) + F * f_c * d_c / 2.
+
+Torque to Lower Load
+  Torque to lower the load (T_down) in a square thread power screw is given by: T_down = (F * d_m / 2) * tan(phi - alpha) + F * f_c * d_c / 2.
+  Where F is the axial load, d_m is the pitch diameter, alpha is the lead angle (tan(alpha) = Lead / (pi * d_m)), phi is the friction angle (tan(phi) = f),
+    f_c is the collar friction coefficient, and d_c is the collar diameter.
+  So T_down = (F * d_m / 2) * (pi * f * d_m -lead)/(pi * d_m + f * lead) + F * f_c * d_c / 2.
+
+Efficiency of Square Thread
+  The efficiency (e) of a square thread power screw during lifting is given by: e = (F * Lead) / (2 * pi * T_up) * 100%. 
+  Where F is the axial load, Lead is the lead of the screw, and T_up is the torque required to raise the load.
+
+Body Stresses - Torsional and Compressive
+  Torsional stress (tau) in the screw body is: tau = T / (J), where T is the torque applied to the screw (either T_up or T_down, 
+    depending on the context) and J is the polar moment of inertia of the screw's minor diameter (J = pi * d_r^3 / 16).
+  Compressive stress (sigma_c) in the screw body is: sigma_c = F / A, where F is the axial load and A is the cross-sectional area of the screw's minor diameter (A = pi * d_r^2 / 4). 
+  Note that both are at the screw body or minor diameter.
+
+Bearing Stress
+  Bearing stress (sigma_b) for one thread is: sigma_b = F / (A_bearing), where F is the axial load and A_bearing is the bearing area,
+    calculated as A_bearing = pi * d_m * h_engaged,where d_m is the pitch diameter and h_engaged is the engaged height of the threads,
+    which can be assumed to be p/2. Check number of threads to take into account, if not given then take one. The load on one thread is 0.38F.
+  So sigma_b = 0.38F / (pi * d_m * p/2).
+
+Thread Bending Stress
+  Thread bending stress (sigma_bending) at the root of the thread is estimated as: sigma_bending = (6 * F) / (pi * number of threads * d_r * p).
+    If number of threads is not given then take one. The load on one thread is 0.38F.
+  So sigma_bending = (6 * 0.38F) / (pi * number of threads * d_r * p).
+
+Von Mises Stress
+  The von Mises stress (sigma_v) combines bending and torsional stresses and is calculated as: sigma_v = sqrt(sigma_bending^2 + 3*tau^2),
+    where sigma_bending is the bending stress and tau is the torsional stress.  This represents the equivalent stress.
+
+Maximum Shear Stress
+  The maximum shear stress (tau_max) is calculated as: tau_max = sqrt((sigma_bending/2)^2 + tau^2), where sigma_bending is the bending stress and tau is the torsional stress.
